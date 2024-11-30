@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "https://uasdapi.ia3x.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }

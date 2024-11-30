@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Información del Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div *ngIf="message">
+    <ion-text color="danger">
+      <p>{{ message }}</p>
+    </ion-text>
+  </div>
+
+  <div *ngIf="userInfo">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Bienvenido, {{ userInfo.nombre }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Usuario:</strong> {{ userInfo.username }}</p>
+        <p><strong>Email:</strong> {{ userInfo.email }}</p>
+        <!-- Agregar más campos según los datos disponibles -->
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
